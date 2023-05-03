@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note-List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <main class="app">
+       
+        <section class="greeting">
+            <h2 class="title">
+                Hi how are you, <input type="text" id="name" placeholder="Name here">
+            </h2>
+        </section>
+
+        <section class="create-note">
+            <h3>CREATE A NOTE</h3>
+
+            <form id="new-note-form">
+                <h4>What's on your note?</h4>
+                <input type="text" name="content" id="content" placeholder="Write your note" />
+
+                <h4>Pick a category</h4>
+                <div class="option">
+                    <label>
+                        <input type="radio" name="category" id="category1" value="kerja" />
+                        <span class="bubble kerja"></span>
+                        <div>Kerja</div>
+                    </label>
+
+                    <label>
+                        <input type="radio" name="category" id="category2" value="personal" />
+                        <span class="bubble personal"></span>
+                        <div>Personal</div>
+                    </label>
+
+                </div>
+                <input type="submit" value="Add note" />
+            </form>
+        </section>
+
+
+        <section class="your-note">
+            <h3>Your Note</h3>
+            <div class="note" id="your-note">
+                <!-- <div class="note-item done">
+                    <label>
+                        <input type="checkbox" />
+                        <span class="bubble kerja"></span>
+                    </label>
+
+                    <div class="note-content">
+                        <input type="text" value="Belajar sejarah" readonly />
+                    </div>
+
+                    <div class="actions">
+                        <button class="edit">Edit</button>
+                        <button class="delete">Delete</button>
+                    </div>
+                </div>
+
+
+                <div class="note-item">
+                    <label>
+                        <input type="checkbox" />
+                        <span class="bubble personal"></span>
+                    </label>
+
+                    <div class="note-content">
+                        <input type="text" value="Get Macdonald" readonly />
+                    </div>
+
+                    <div class="actions">
+                        <button class="edit">Edit</button>
+                        <button class="delete">Delete</button>
+                    </div>
+                </div> -->
+            </div>
+        </section>
+    </main>
+    
+
+    <script src="main.js"></script>
+</body>
+</html>
